@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Fredoka:wght@300;500&display=swap" rel="stylesheet">
+    <title>De 5 grundsmage | Eksamensprojekt</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <meta name="description" content="Her kan du se vores udvalg af øl med de 5 grundsmage: Sød, sur, salt, umami og bitter.">
+
+</head>
+<body>
+
+<!--Header med menupunkter, logo og burgermenu-->   
+<header>
+    <nav>
+    <a href="index.html"><img src="img/logo.png" alt="" class="logo-billede"></a>
+        <div>
+            <!--kurv-->
+
+            <div id="cart-container" class="cart-container">
+                <div class="cart-icon" onclick="goToCartPage()">
+                    <img src="img/øl-holder.png" alt="kurve ikon">
+                    <div class="cart-count">
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!--kurv slut-->
+            <div class="burger-menu-btn" onclick="toggleBurgerMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            </div>
+    </div>
+      
+      <div class="burger-menu">
+        <!-- Your burger menu content goes here -->
+        <ul>
+            <li><a href="smage.html">Udvalg</a></li>
+            <li><a href="alkoholfri.html">Alkoholfri?</a></li>
+            <li><a href="anbefalinger.html">Anbefalinger</a></li>
+        </ul>
+        <div class="header-kontakt">
+            <a href="om-os.html"><p>Om os</p></a>
+            <a href="404.html"><img src="img/instagram.svg" alt="Instagram logo"></a>
+            <a href="404.html"><img src="img/facebook.svg" alt="Facebook logo"></a>
+            <a href="404.html"><img src="img/tik-tok.svg" alt="Tik tok logo"></a>
+            <a href="404.html"><p>Kontakt</p></a>
+        </div>
+      </div>
+
+
+    </nav>
+</header>
+
+<!--Her skal resten af hjemmesiden ind-->
+<main class="udvalg-main">
+
+    <!--overskrift med dåser og flasker-->
+            <div class="udvalg-overskrift">
+                <a href="udvalg-dåser-andre-smage.html"><img src="img/dåse-farve.svg" alt="Dåse ikon i farver"></a>
+                <a href="udvalg-andre-smage.html"><h1 class="underside-overskrift">Udvalg</h1></a>
+                <a href="udvalg-flasker-andre-smage.html"><img src="img/flaske-sort-hvid.svg" alt="Flaske ikon i sort hvid"></a>
+            </div>
+    
+    
+
+    
+    <!--ølkort 2-->
+    
+            <div class="øl-kort2">
+                <div>
+                    <img src="img/mobil-billeder/dåse-sød.png" alt="Billede af sød øl på dåse">
+                </div>
+    
+                <div class="udvalg-beskrivelse">
+                    <h2 class="underside-underoverskrift-udvalg">Sød</h2>
+                    <p class="beskrivende-tekst">Solmodne jordbær, omfavnet af legende bobler af vanilje. En subtil brise af karamel svæver gennem smagen og lander på en blød pude af honning.</p>
+                    <div class="læs-mere-knap-container">
+                        <div class="læs-mere-knap">
+                            <a href="øl-sider-dåse/sød-dåse.html">LÆS MERE</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+
+    
+    <!--ølkort 4-->
+    
+    <div class="øl-kort2">
+        <div>
+            <img src="img/mobil-billeder/dåse-sur.png" alt="Billede af sur øl på dåse">
+        </div>
+    
+        <div class="udvalg-beskrivelse">
+            <h2 class="underside-underoverskrift-udvalg">Sur</h2>
+            <p class="beskrivende-tekst">En forfriskende symfoni af passionsfrugt, kiwi, hindbær og en strejf af citron.</p>
+            <div class="læs-mere-knap-container">
+                <div class="læs-mere-knap">
+                    <a href="øl-sider-dåse/sur-dåse.html">LÆS MERE</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    
+    <!--ølkort 6-->
+    
+    <div class="øl-kort2">
+        <div>
+            <img src="img/mobil-billeder/dåse-salt.png" alt="Billede af salt øl på dåse">
+        </div>
+    
+        <div class="udvalg-beskrivelse">
+            <h2 class="underside-underoverskrift-udvalg">Salt</h2>
+            <p class="beskrivende-tekst">Bølger af intens havsalt, der danser på tungen med en udsøgt mineralrig smag.</p>
+            <div class="læs-mere-knap-container">
+                <div class="læs-mere-knap">
+                    <a href="øl-sider-dåse/salt-dåse.html">LÆS MERE</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    
+    <!--ølkort 8-->
+    
+    <div class="øl-kort2">
+        <div>
+            <img src="img/mobil-billeder/dåse-umami.png" alt="Billede af sumami øl på flaske">
+        </div>
+    
+        <div class="udvalg-beskrivelse">
+            <h2 class="underside-underoverskrift-udvalg">Umami</h2>
+            <p class="beskrivende-tekst">En harmonisk kombination af ristede svampe, modne tomater og balsamico.</p>
+            <div class="læs-mere-knap-container">
+                <div class="læs-mere-knap">
+                    <a href="øl-sider-dåse/umami-dåse.html">LÆS MERE</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    
+    <!--ølkort 10-->
+    
+    <div class="øl-kort2">
+        <div>
+            <img src="img/mobil-billeder/dåse-bitter.png" alt="Billede af sbitter øl på flaske">
+        </div>
+    
+        <div class="udvalg-beskrivelse">
+            <h2 class="underside-underoverskrift-udvalg">Bitter</h2>
+            <p class="beskrivende-tekst">En dristig symfoni af ristet kaffe, mørk chokolade og en subtil grapefrugtbid.</p>
+            <div class="læs-mere-knap-container">
+                <div class="læs-mere-knap">
+                    <a href="øl-sider-dåse/bitter-dåse.html">LÆS MERE</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+            
+    
+        </main>
+
+<!--En footer med adresse, telefon og email. Det er også her man finder links til virksomhedens some-->
+<footer>
+    <div>
+        <p>Følg os</p>
+        <div>
+            <a href="../404.html" class="knap-stil"><img src="../img/instagram.svg" alt="Instagram logo"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/facebook.svg" alt="Facebook logo"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/tik-tok.svg" alt="tik-tok logo"></a>
+        </div>
+    </div>
+
+    <div class="footer-kontakt">
+    <a href="../om-os.html"><p>Om os</p></a>
+    </div>
+
+    <div class="footer-kontakt">
+    <a href="../404.html"><p>Kontakt</p></a>
+    </div>
+
+
+    <div>
+        <p>Kontakt</p>
+        <div>
+            <a href="../404.html" class="knap-stil"><img src="../img/location.png" alt=" lokation"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/telephone.png" alt="telefon"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/mail.png" alt="e.mail"></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/burger.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

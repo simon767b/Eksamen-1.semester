@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Fredoka:wght@300;500&display=swap" rel="stylesheet">
+    <title>Øl smage | Eksamensprojekt</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <meta name="description" content="Her kan du se vores udvalg af øl: Pilsner, classic, IPA, porter og dark stout.">
+
+</head>
+<body>
+
+<!--Header med menupunkter, logo og burgermenu-->   
+<header>
+    <nav>
+    <a href="index.html"><img src="img/logo.png" alt="" class="logo-billede"></a>
+        <div>
+            <!--kurv-->
+
+            <div id="cart-container" class="cart-container">
+                <div class="cart-icon" onclick="goToCartPage()">
+                    <img src="img/øl-holder.png" alt="kurve ikon">
+                    <div class="cart-count">
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!--kurv slut-->
+            <div class="burger-menu-btn" onclick="toggleBurgerMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            </div>
+    </div>
+      
+      <div class="burger-menu">
+        <!-- Your burger menu content goes here -->
+        <ul>
+            <li><a href="smage.html">Udvalg</a></li>
+            <li><a href="alkoholfri.html">Alkoholfri?</a></li>
+            <li><a href="anbefalinger.html">Anbefalinger</a></li>
+        </ul>
+        <div class="header-kontakt">
+            <a href="om-os.html"><p>Om os</p></a>
+            <a href="404.html"><img src="img/instagram.svg" alt="Instagram logo"></a>
+            <a href="404.html"><img src="img/facebook.svg" alt="Facebook logo"></a>
+            <a href="404.html"><img src="img/tik-tok.svg" alt="Tik tok logo"></a>
+            <a href="404.html"><p>Kontakt</p></a>
+        </div>
+      </div>
+
+
+    </nav>
+</header>
+
+<!--Her skal resten af hjemmesiden ind-->
+<main class="udvalg-main">
+
+    <!--overskrift med dåser og flasker-->
+            <div class="udvalg-overskrift">
+                <a href="udvalg-dåser.html"><img src="img/dåse-sort-hvid.svg" alt="Dåse ikon i sort hvid"></a>
+                <a href="udvalg.html"><h1 class="underside-overskrift">Udvalg</h1></a>
+                <a href="udvalg-flasker.html"><img src="img/flaske-farver.svg" alt="Flaske ikon i farver"></a>
+            </div>
+    
+    
+    <!--ølkort 1-->
+            <div class="øl-kort1">
+                <div class="udvalg-beskrivelse">
+                    <h2 class="underside-underoverskrift-udvalg">Pilsner</h2>
+                    <p class="beskrivende-tekst">Den gyldne farve og sprøde malttoner, der danser på tungen, ledsaget af en forfriskende humlebitterhed.</p>
+                        <div class="læs-mere-knap">
+                            <a href="øl-sider-flaske/pilsner-flaske.html">LÆS MERE</a>
+                        </div>
+                </div>
+    
+                <div>
+                    <img src="img/mobil-billeder/flaske-pilsner.png" alt="Billede af pilsner øl i flaske">
+                </div>
+            </div>
+    
+
+    
+    <!--ølkort 3-->
+    <div class="øl-kort1">
+        <div class="udvalg-beskrivelse">
+            <h2 class="underside-underoverskrift-udvalg">Classic</h2>
+            <p class="beskrivende-tekst">En maltrig symfoni, der møder dine smagsløg, akkompagneret af en subtil blanding af humle.</p>
+                <div class="læs-mere-knap">
+                    <a href="øl-sider-flaske/classic-flaske.html">LÆS MERE</a>
+                </div>
+        </div>
+    
+        <div>
+            <img src="img/mobil-billeder/flaske-classic.png" alt="Billede af classic øl i flaske">
+        </div>
+    </div>
+    
+
+    
+    <!--ølkort 5-->
+    <div class="øl-kort1">
+        <div class="udvalg-beskrivelse">
+            <h2 class="underside-underoverskrift-udvalg">IPA</h2>
+            <p class="beskrivende-tekst"> Humlebitterhed kombineret med friske citrusnoter, blomsterdufte og en subtil karamelsødme.</p>
+                <div class="læs-mere-knap">
+                    <a href="øl-sider-flaske/ipa-flaske.html">LÆS MERE</a>
+                </div>
+        </div>
+    
+        <div>
+            <img src="img/mobil-billeder/flaske-ipa.png" alt="Billede af IPA øl i flaske">
+        </div>
+    </div>
+    
+
+    
+    <!--ølkort 7-->
+    <div class="øl-kort1">
+        <div class="udvalg-beskrivelse">
+            <h2 class="underside-underoverskrift-udvalg">Porter</h2>
+            <p class="beskrivende-tekst">En balanceret symfoni af ristet malt, chokolade og kaffe, der danser på tungen.</p>
+                <div class="læs-mere-knap">
+                    <a href="øl-sider-flaske/porter-flaske.html">LÆS MERE</a>
+                </div>
+        </div>
+    
+        <div>
+            <img src="img/mobil-billeder/flaske-porter.png" alt="Billede af porter øl i flaske">
+        </div>
+    </div>
+    
+
+    
+    <!--ølkort 9-->
+    <div class="øl-kort1">
+    <div class="udvalg-beskrivelse">
+    <h2 class="underside-underoverskrift-udvalg">Dark stout</h2>
+    <p class="beskrivende-tekst">Den karakteristiske cremede konsistens og noter af kaffe, kakao og en antydning af karamel.</p>
+        <div class="læs-mere-knap">
+            <a href="øl-sider-flaske/dark-stout-flaske.html">LÆS MERE</a>
+        </div>
+    </div>
+    
+    <div>
+        <img src="img/mobil-billeder/flaske-dark-stout.png" alt="Billede af dark stout øl i flaske">
+    </div>
+    </div>
+    
+
+    
+            
+    
+        </main>
+
+<!--En footer med adresse, telefon og email. Det er også her man finder links til virksomhedens some-->
+<footer>
+    <div>
+        <p>Følg os</p>
+        <div>
+            <a href="../404.html" class="knap-stil"><img src="../img/instagram.svg" alt="Instagram logo"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/facebook.svg" alt="Facebook logo"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/tik-tok.svg" alt="tik-tok logo"></a>
+        </div>
+    </div>
+
+    <div class="footer-kontakt">
+    <a href="../om-os.html"><p>Om os</p></a>
+    </div>
+
+    <div class="footer-kontakt">
+    <a href="../404.html"><p>Kontakt</p></a>
+    </div>
+
+
+    <div>
+        <p>Kontakt</p>
+        <div>
+            <a href="../404.html" class="knap-stil"><img src="../img/location.png" alt=" lokation"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/telephone.png" alt="telefon"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/mail.png" alt="e.mail"></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/burger.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

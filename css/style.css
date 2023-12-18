@@ -1,0 +1,1491 @@
+/*-----------------------------
+------------styling------------
+-----------------------------*/
+
+/* styling*/
+
+
+/* farver
+#F2EFC4
+#A8D977
+#FFC62A
+#FF962A
+#FFFFFF
+*/
+
+/* her er de forskellige fonte
+font-family: 'Baloo 2', sans-serif;
+font-family: 'Fredoka', sans-serif;
+
+*/
+
+/*responsive billeder*/
+
+
+
+/*styling på skrift*/
+.underside-skrift{
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #FFFFFF;
+  padding: 0px 8vw;
+  text-align: center;
+}
+
+
+/*kort til opstilling på stor skærm*/
+.stor-kort{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/*-----------------------------
+-------------header------------
+-----------------------------*/
+
+header{
+    background-color: #FFC62A;
+
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+header nav div{
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+/*logo*/
+.logo-billede{
+  width: 50px;
+}
+
+
+/*burgermenu*/
+.burger-menu-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;
+    background: #FFFFFF;
+    border: none;
+    padding: 10px 8px;
+    border-radius: 50%;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 5.3px;
+    background-color: #FFC62A;
+    transition: 0.3s;
+    border-radius: 20px;
+  }
+  
+  .burger-menu-btn.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .burger-menu-btn.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-menu-btn.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+  
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 86px;
+    left: 0;
+    width: 100%;
+    background-color: #FFC62A;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    gap: 20px;
+    padding: 20px 0px;
+  }
+
+  .burger-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    gap: 20px;
+    
+
+  }
+
+  .burger-menu ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+  }
+
+  .header-kontakt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .header-kontakt a{
+    text-decoration: none;
+    color: #FFC62A;
+
+  }
+  .header-kontakt a img{
+    width: 20px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .header-kontakt a p{
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  
+  /* kurv*/
+  .cart-container {
+  
+    bottom: 20px;
+    right: 20px;
+   /*  z-index: 1; /*Ensure the cart is on top of other elements */    
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-icon img {
+    width: 20px;
+}
+
+.cart-icon:hover {
+    background-color: #FF962A;
+}
+
+.cart-count {
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    background-color: #FFFFFF;
+    padding: 5px 8px;
+    border-radius: 50%;
+    color: #FFC62A;
+    font-size: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+
+}
+
+/* Animation for cart count update */
+.cart-count-update {
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+/*kurv slut*/
+
+/*-----------------------------
+-------------main------------
+-----------------------------*/
+
+/*forside*/
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #A8D977;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.overskrift-kort{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.bryg-overskrifts-billede{
+  width: 60%;
+}
+
+
+.underside-billeder{
+  width: 100%;
+}
+
+.underside-overskrift{
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: #FFFFFF;
+  padding: 0px 8vw;
+  text-align: center;
+}
+
+.underside-underoverskrift{
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 0px 8vw;
+  text-align: center;
+}
+
+
+/* smag side*/
+.smag-main{
+  padding-bottom: 0;
+}
+
+.smag-container{
+  display: flex;
+  width: 100%;
+
+}
+
+.venstre-kasse{
+  background-color: #FFC62A;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0px;
+  gap: 20px;
+}
+
+.venstre-kasse a{
+  text-decoration: none;
+}
+
+.venstre-kasse img{
+  width: 100px;
+}
+
+.højre-kasse{
+  background-color:#FF962A;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0px;
+  gap: 20px;
+}
+
+.højre-kasse a{
+  text-decoration: none;
+}
+
+.højre-kasse img{
+  width: 100px;
+}
+
+/* knap 1 */
+.smag-knap-stil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: #FF962A;
+  border: none;
+  border-radius: 50% ;
+  box-shadow: 0px 5px #FFC62A, inset 6px 6px 10px 0 rgba(255, 255, 255, 0.5) ;
+  transition: 100ms ease-in-out;
+  padding: 20px 20px;
+}
+
+.smag-knap-stil img{
+  width: 100px;
+}
+
+/* hover
+.knap-stil:hover {
+  border: 5px solid #F2EFC4;
+  transition: 0.5s ease-in-out;
+}
+*/
+
+.smag-knap-stil:active {
+  background-color: #FF962A;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+  transition:150ms ease-in-out;
+}
+
+/* knap 2 */
+.smag-knap-stil-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: #FFC62A;
+  border: none;
+  border-radius: 50% ;
+  box-shadow: 0px 5px #FF962A, inset 6px 6px 10px 0 rgba(255, 255, 255, 0.5) ;
+  transition: 100ms ease-in-out;
+  padding: 20px 20px;
+}
+
+.smag-knap-stil-2 img{
+  width: 100px;
+}
+
+/* hover
+.knap-stil:hover {
+  border: 5px solid #F2EFC4;
+  transition: 0.5s ease-in-out;
+}
+*/
+
+.smag-knap-stil-2:active {
+  background-color: #FF962A;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+  transition:150ms ease-in-out;
+}
+
+
+/* Udvalg side  */
+.udvalg-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #A8D977;
+  gap: 0px;
+  padding: 0px 0px;
+}
+
+.udvalg-overskrift{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.udvalg-overskrift a{
+text-decoration: none;
+}
+
+.udvalg-overskrift img{
+width: 16vw;
+}
+
+/*ølkort 1*/
+
+.øl-kort1{
+background-color: #FFC62A;
+display: flex;
+padding: 20px;
+gap: 16vw;
+border-bottom: 1px solid black ;
+}
+
+.udvalg-beskrivelse{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.underside-underoverskrift-udvalg{
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.beskrivende-tekst{
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 300;
+}
+
+.læs-mere-knap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:#FF962A;
+  width: fit-content;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+.læs-mere-knap a{
+  background-color:#FFC62A;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 300;
+}
+
+
+.øl-kort1 div img{
+  width: 16vw;
+  }
+
+/*ølkort 2*/
+.øl-kort2{
+  background-color:#FF962A;
+  display: flex;
+  padding: 20px;
+  gap: 1vw;
+  border-bottom: 1px solid black ;
+  }
+  
+  .øl-kort2 .udvalg-overskrift{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .øl-kort2 .udvalg-beskrivelse{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .øl-kort2 .underside-underoverskrift-udvalg{
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+  }
+  
+  .øl-kort2 .beskrivende-tekst{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 300;
+  }
+  
+
+
+  .øl-kort2 .læs-mere-knap-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .øl-kort2 .læs-mere-knap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:#FFC62A;
+    width: fit-content;
+    padding: 5px 5px;
+    border-radius: 10px;
+  }
+  
+  .øl-kort2 .læs-mere-knap a{
+    background-color:#FF962A;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 300;
+  }
+
+  .øl-kort2 div img{
+    width: 30vw;
+    }
+
+/* Inde på hver øl */
+.individuel-øl-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #A8D977;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.individuel-container{
+  padding: 0px 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.beskrivende-tekst-venstre{
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 300;
+}
+
+.individuel{
+  width: 30vw;
+}
+
+/* knapper */
+.inden_kurv{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* knap til at vælge antal*/
+
+.antal{
+  /*display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  padding: 0px 5px;*/
+  display: flex;
+  width: 90px;
+  height: 40px;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.antal input {
+  width: 50px;
+  height: 100%;
+  padding: 5px;
+  font-size: 1em;
+  text-align: center;
+  border: none;
+  background-color: #FFC62A; /* Orange baggrundsfarve */
+  overflow: hidden;
+  color: #FFFFFF; /* Hvid tekstfarve */
+  font-family: 'Fredoka', sans-serif;
+}
+
+.quantity-btn {
+  height: 100%;
+  font-size: 1em;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.decrement {
+  width: 30px;
+  background-color: #FF962A; /* Orange farve for decrement-knappen */
+  color: #fff; /* Hvid tekstfarve */
+  border: none;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.increment {
+  width: 30px;
+  background-color: #FF962A; /* Orange farve for increment-knappen */
+  color: #fff; /* Hvid tekstfarve */
+  border: none;
+  font-family: 'Fredoka', sans-serif;
+}
+
+
+/*knap til at lægge i kurven*/
+
+
+
+.kurv{
+  display: flex;
+}
+
+.product button {
+  background-color: #FFC62A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  width: 90px;
+  height: 40px;
+  font-size: 14px;
+  font-family: 'Fredoka', sans-serif;
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+/* Optional: Hover effect */
+.product button:hover {
+  transition: background-color 0.2s ease-in;
+  background-color: #9A7C37;
+}
+
+/* oplysninger */
+.oplysninger-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black ;
+  gap: 5px;
+  width: 100%;
+}
+
+.oplysninger-container:last-child{
+  border-bottom: none;
+
+}
+
+.oplysninger-container div{
+  display: flex;
+  flex-direction: column;
+}
+
+.oplysninger-container div p{
+  color: #FFFFFF;
+  font-size: 11px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 300;
+  width: 100px;
+}
+
+.oplysninger-container img {
+  width: 6vw;
+  background-color: #FFC62A;
+  border-radius: 50%;
+  padding: 2vw;
+  overflow: visible;
+}
+
+/* pop up i næringsindhold*/
+.button {
+  color: #FFFFFF;
+  font-size: 11px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 300;
+  width: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 2s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: auto auto;
+  padding: 20px;
+  background: #06D85F;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 2s ease-in-out;
+  gap: 20px;
+}
+
+.popup h2 {
+  margin-top: 0;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color:#FFFFFF;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+/* pop up i næringsindhold slut*/
+
+/*absolutte knapper*/
+
+.absolutte-knapper-top{
+  display: flex;
+  width: 88vw;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  gap: 20px;
+  }
+  .absolutte-knapper-top a img{
+    width: 10vw;
+  }
+
+.absolutte-knapper-venstre{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: fixed;
+left: 0;
+top: 40vh;
+margin-left: 5vw;
+gap: 20px;
+}
+
+.absolutte-knapper-højre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 40vh;
+  margin-right: 5vw;
+  gap: 20px;
+}
+
+.absolutte-knapper-venstre a img{
+  width: 7vw;
+}
+  
+.absolutte-knapper-højre a img{
+  width: 7vw;
+}
+    
+
+
+/* alkoholfri side*/
+.beskrivende-tekst-alkoholfri{
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 300;
+  padding: 0 20vw;
+}
+
+.beskrivende-tekst-alkoholfri a{
+position: sticky;
+}
+
+.alkoholfri-kort{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.alkoholfri-kort h1{
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  color: #FFFFFF;
+  padding: 0px 8vw;
+  text-align: center;
+}
+
+.alkoholfri-kort img{
+width: 100%;
+}
+
+.stor-kort-anbefaling video{
+  width: 100%;
+
+}
+
+/* Anbefalinger side*/
+
+.alkoholfri-kort-anbefalinger{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.alkoholfri-kort-anbefalinger h1{
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  color: #FFFFFF;
+  text-align: center;
+
+  position: absolute;
+  align-items: center;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  text-align: center;
+  width: 100%;
+}
+
+.alkoholfri-kort-anbefalinger img{
+width: 100%;
+}
+
+.underside-skrift-anbefalinger{
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #FFFFFF;
+  padding: 0px 8vw;
+  text-align: start;
+}
+
+.stor-kort-anbefaling{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+
+}
+
+
+/*-----------------------------
+--------------kurv-------------
+-----------------------------*/
+.kurv-main{
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #FF962A;
+  gap: 20px;
+  height: 100vh;
+}
+
+.kurv-kort{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #FF962A;
+
+}
+
+.kurv-kort img{
+  width: 4vw;
+}
+
+.kurv-kort h1{
+color: #FFFFFF;
+font-family: 'Fredoka', sans-serif;
+font-weight: 500;
+font-size: 5vw;
+}
+
+.kurv-kort p{
+color: #FFFFFF;
+font-family: 'Fredoka', sans-serif;
+font-weight: 500;
+font-size: 2.5vw;
+text-align: left;
+}
+
+
+
+
+/*-----------------------------
+-------------footer------------
+-----------------------------*/
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFC62A;
+  padding: 20px 0px;
+}
+
+footer div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer div p{
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+footer div div{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* knap */
+.knap-stil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 50% ;
+  box-shadow: 0px 5px #FF962A;
+  transition: 100ms ease-in-out;
+  padding: 10px 10px;
+}
+
+.knap-stil img{
+  width: 20px;
+}
+
+/* hover
+.knap-stil:hover {
+  border: 5px solid #F2EFC4;
+  transition: 0.5s ease-in-out;
+}
+*/
+
+.knap-stil:active {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px #a9631c;
+  transform: translateY(2px);
+  transition:150ms ease-in-out;
+}
+
+.footer-kontakt{
+ display: none;
+  }
+
+.footer-kontakt a {
+text-decoration: none;
+}
+
+.footer-kontakt a p{
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  padding: 10px;
+  color: #FFC62A;
+}
+
+@media only screen and (min-width:800px) {
+
+  /*forside*/
+    main{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .bryg-overskrifts-billede{
+    width: 40%;
+  }
+
+  .stor-kort{
+    max-width: 40vw;
+    gap: 20px;
+  }
+
+  .stor-kort p{
+    text-align: start;
+    font-size: 2vw;
+  }
+
+
+/*header*/
+  .burger-menu-btn{
+  display: none;
+}
+
+.burger-menu{
+  background-color: transparent;
+  position: relative;
+  width: auto;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.burger-menu ul{
+  display: flex;
+  flex-direction: row;
+
+}
+
+/*hover effect*/
+.burger-menu ul li a{
+display: inline-block;
+padding: 15px 20px;
+position: relative;
+}
+
+.burger-menu ul li a::after{
+background: none repeat scroll 0 0 transparent;
+bottom: 0;
+content: "";
+display: block;
+height: 2px;
+left: 50%;
+position: absolute;
+background: #FFFFFF;
+transition: width 0.3s ease 0s,left 0.3s ease 0s;
+width: 0;
+}
+
+
+.burger-menu ul li a:hover::after{
+width: 100%;
+left: 0;
+}
+
+/*hover effect slut*/
+
+.header-kontakt{
+  display: none;
+}
+
+/*kurv*/
+
+.cart-container{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 111111;
+}
+
+.cart-container img{
+width: 3vw;
+}
+
+.cart-icon{
+  padding: 15px;
+}
+
+.cart-count{
+  padding: 2px 8px;
+  font-size: 2vw;
+}
+
+
+/*smag-side*/
+.underside-underoverskrift{
+  font-size: 1.5vw;
+}
+
+.venstre-kasse{
+  gap: 2vw;
+}
+
+.venstre-kasse a h2{
+  font-size: 2vw;
+}
+.højre-kasse{
+  gap: 2vw;
+}
+
+.højre-kasse a h2{
+  font-size: 2vw;
+}
+
+/*udvalg-side*/
+.udvalg-main{
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.udvalg-overskrift{
+  width: 100%;
+}
+
+.underside-overskrift{
+  font-size: 8vw;
+}
+
+.udvalg-overskrift img{
+  display: none;
+}
+
+.øl-kort1{
+  width: 45%;
+
+}
+
+.øl-kort1 div img{
+  height: 300px;
+  width: auto;
+
+}
+
+.øl-kort2{
+  width: 45%;
+
+}
+
+.øl-kort2 div img{
+  height: 300px;
+  width: auto;
+
+}
+
+.beskrivende-tekst{
+  font-size: 1.5vw;
+}
+
+.øl-kort2 .beskrivende-tekst{
+  font-size: 2vw;
+}
+
+.øl-kort2 .underside-underoverskrift-udvalg{
+  font-size: 6vw;
+}
+
+.øl-kort1 {
+gap: 0;
+
+}
+
+/*alkoholfri-side*/
+.alkoholfri-kort{
+  width: 30vw;
+  gap: 20px;
+}
+
+.alkoholfri-kort img{
+height: 20vw;
+object-fit: cover;
+
+}
+
+.stor-kort-anbefaling{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: 2vw 4.5vw;
+}
+
+.stor-kort-anbefaling .beskrivende-tekst-alkoholfri{
+  padding: 0 5vw;
+  font-size: 2vw;
+}
+
+.alkoholfri-kort .beskrivende-tekst-alkoholfri{
+  padding: 0 0vw;
+  font-size: 1.5vw;
+}
+
+.stor-kort-anbefaling video{
+  width: 50%;
+
+}
+
+/*anbefalinger*/
+.alkoholfri-kort-anbefalinger{
+  max-width: 40vw;
+  gap: 20px;
+}
+
+.alkoholfri-kort-anbefalinger h1{
+  top: 110px;
+
+}
+
+.alkoholfri-kort-anbefalinger img{
+  height: 20vw;
+  object-fit: cover;
+}
+
+/*inde på hver øl*/
+.induviduel-øl-billede-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 77vw;
+}
+
+.individuel-øl-main{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #A8D977;
+  gap: 20px;
+  padding:0 0;
+  flex-wrap: wrap;
+}
+
+.individuel{
+width: 15vw;
+position: sticky;
+top: 50px;
+}
+
+.individuel-container{
+ width: 50%;
+ padding: 0;
+}
+
+.underside-underoverskrift-udvalg{
+  font-size: 6vw;
+}
+
+.beskrivende-tekst{
+  font-size: 2vw;
+}
+
+.antal{
+  width: 220px;
+  height: 60px;
+}
+
+.antal input{
+  width: 100%;
+  font-size: 2vw;
+}
+
+.quantity-btn {
+  height: 100%;
+  width: 100%;
+  font-size: 2vw;
+}
+
+.decrement {
+  width: 150px;
+}
+
+.increment {
+  width: 150px;
+  
+}
+
+/*oplysninger*/
+
+.individuel-øl-main{
+  padding: 50px 0;
+}
+
+.beskrivende-tekst-venstre {
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 2.5vw;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 300;
+}
+
+
+.oplysninger-container {
+  padding: 10px 0;
+}
+
+.oplysninger-container div p {
+  font-size: 1.5vw;
+  width: 500px;
+}
+
+.individuel-container{
+  gap: 1vw;
+}
+
+.button {
+  font-size: 1.5vw;
+}
+
+
+.product button {
+  background-color: #FFC62A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0;
+  width: 220px;
+  height: 60px;
+  font-size: 2vw;
+  font-family: 'Fredoka', sans-serif;
+  cursor: pointer; /* Add a pointer cursor on hover */
+  text-align: center;
+}
+
+/*absolutte knapper*/
+
+.absolutte-knapper-top{
+  width: 95vw;
+  top: 105px;
+  }
+
+  .absolutte-knapper-top a img{
+    width: 5vw;
+  }
+
+.absolutte-knapper-venstre{
+top: 50vh;
+margin-left: 1vw;
+}
+
+.absolutte-knapper-højre{
+  top: 50vh;
+  margin-right: 1vw;
+}
+
+.absolutte-knapper-venstre a img{
+  width: 4vw;
+}
+  
+.absolutte-knapper-højre a img{
+  width: 4vw;
+}
+
+
+/*knap*/
+.læs-mere-knap a:hover{
+  background-color: #FF962A;
+  transition: all 0.4s ease 0s;
+}
+
+.øl-kort2 .læs-mere-knap a:hover{
+  background-color: #FFC62A;
+  transition: all 0.4s ease 0s;
+}
+
+
+/*footer*/
+.footer-kontakt{
+  display: flex;
+   }
+ 
+ .footer-kontakt a {
+ text-decoration: none;
+ }
+ 
+ .footer-kontakt a p{
+   background-color: #FFFFFF;
+   border-radius: 30px;
+   padding: 10px;
+   color: #FFC62A;
+ }
+
+ /*-----------------------------
+--------------kurv-------------
+-----------------------------*/
+.kurv-main{
+  display: flex; 
+  background-color: #FF962A;
+  gap: 20px;
+  height: 100vh;
+  flex-wrap: nowrap;
+}
+
+.kurv-kort{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #FF962A;
+
+}
+
+.kurv-kort h1{
+color: #FFFFFF;
+font-family: 'Fredoka', sans-serif;
+font-weight: 500;
+font-size: 5vw;
+}
+
+.kurv-kort p{
+color: #FFFFFF;
+font-family: 'Fredoka', sans-serif;
+font-weight: 500;
+font-size: 2vw;
+text-align: left;
+}
+
+  
+
+.billede1{
+  content: url('img/fest.webp'); /* Image for screens 800px and above */
+  width: 100%;
+}
+
+  
+}

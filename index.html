@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Fredoka:wght@300;500&display=swap" rel="stylesheet">
+    <title>Forside | Eksamensprojekt</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <meta name="description" content="Forside til Trøjborg Bryghus. En virksomhed der laver alkoholfrie øl, med varierende smage, god kvalitet og som tør at stå inde for det de laver.">
+
+</head>
+<body>
+
+<!--Header med menupunkter, logo og burgermenu-->   
+<header>
+    <nav>
+    <a href="index.html"><img src="img/logo.png" alt="" class="logo-billede"></a>
+        <div>
+            <!--kurv-->
+
+            <div id="cart-container" class="cart-container">
+                <div class="cart-icon" onclick="goToCartPage()">
+                    <img src="img/øl-holder.png" alt="kurve ikon">
+                    <div class="cart-count">
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!--kurv slut-->
+            <div class="burger-menu-btn" onclick="toggleBurgerMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            </div>
+    </div>
+      
+      <div class="burger-menu">
+        <!-- Your burger menu content goes here -->
+        <ul>
+            <li><a href="smage.html">Udvalg</a></li>
+            <li><a href="alkoholfri.html">Alkoholfri?</a></li>
+            <li><a href="anbefalinger.html">Anbefalinger</a></li>
+        </ul>
+        <div class="header-kontakt">
+            <a href="om-os.html"><p>Om os</p></a>
+            <a href="404.html"><img src="img/instagram.svg" alt="Instagram logo"></a>
+            <a href="404.html"><img src="img/facebook.svg" alt="Facebook logo"></a>
+            <a href="404.html"><img src="img/tik-tok.svg" alt="Tik tok logo"></a>
+            <a href="404.html"><p>Kontakt</p></a>
+        </div>
+      </div>
+
+
+    </nav>
+</header>
+
+<!--Her skal resten af hjemmesiden ind-->
+<main>
+
+    <div class="overskrift-kort">
+    <img src="img/trøjborg-bryg.png" alt="" class="bryg-overskrifts-billede">
+    </div>
+
+    <div class="stor-kort">
+        <picture class="underside-billeder">
+            <source media="(min-width: 800px)" srcset="img/fest.webp" class="underside-billeder">
+            <img src="img/mobil-billeder/fest.jpg" class="underside-billeder" alt="Billede af folk der fester">
+          </picture>
+    <p class="underside-skrift">Nyd smagen af ren fornøjelse med vores alkoholfrie øl. Med sin forfriskende og fyldige smag beviser denne øl, at man ikke behøver alkohol for at være en del af festen.</p>
+    </div>
+
+    <div class="stor-kort">
+            <picture class="underside-billeder">
+                <source media="(min-width: 800px)" srcset="img/øl-varianter.jpg" class="underside-billeder">
+                <img src="img/mobil-billeder/øl-varianter.jpg" class="underside-billeder" alt="Billede af de forskellige varianter af øl">
+              </picture>
+    <p class="underside-skrift">Prøv vores udvalg af forskellige øl med ølsmage</p>
+    <div class="læs-mere-knap-container">
+        <div class="læs-mere-knap">
+            <a href="udvalg.html">LÆS MERE</a>
+        </div>
+    </div>
+</div>
+
+
+    <div class="stor-kort">
+        <picture class="underside-billeder">
+            <source media="(min-width: 800px)" srcset="img/søde-varianter.jpg" class="underside-billeder">
+            <img src="img/mobil-billeder/søde-varianter.jpg" class="underside-billeder" alt="Billede af de forskellige varianter af øl">
+          </picture>
+    <p class="underside-skrift">Prøv også vores “test dine smagsløg” varianter.</p>
+    <div class="læs-mere-knap-container">
+        <div class="læs-mere-knap">
+            <a href="udvalg-andre-smage.html">LÆS MERE</a>
+        </div>
+    </div>
+</div>
+
+    <div class="stor-kort">
+        <picture class="underside-billeder">
+            <source media="(min-width: 800px)" srcset="img/skål.jpg" class="underside-billeder">
+            <img src="img/mobil-billeder/skål.jpg" class="underside-billeder" alt="Billede af to øl der skåler">
+          </picture>
+    <p class="underside-skrift">Tag et sip og vær god ved din krop, mens du stadig er med på alle festlighederne. Denne alkoholfrie perle er skabt til dem, der ønsker en velsmagende oplevelse uden kompromis. Skål for smagen, skål for festen, skål for livet!</p>
+    </div>
+
+    
+
+</main>
+
+<!--En footer med adresse, telefon og email. Det er også her man finder links til virksomhedens some-->
+<footer>
+    <div>
+        <p>Følg os</p>
+        <div>
+            <a href="../404.html" class="knap-stil"><img src="../img/instagram.svg" alt="Instagram logo"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/facebook.svg" alt="Facebook logo"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/tik-tok.svg" alt="tik-tok logo"></a>
+        </div>
+    </div>
+
+    <div class="footer-kontakt">
+    <a href="../om-os.html"><p>Om os</p></a>
+    </div>
+
+    <div class="footer-kontakt">
+    <a href="../404.html"><p>Kontakt</p></a>
+    </div>
+
+
+    <div>
+        <p>Kontakt</p>
+        <div>
+            <a href="../404.html" class="knap-stil"><img src="../img/location.png" alt=" lokation"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/telephone.png" alt="telefon"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/mail.png" alt="e.mail"></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/burger.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

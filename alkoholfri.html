@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Fredoka:wght@300;500&display=swap" rel="stylesheet">
+    <title>Alkoholfri? | Eksamensprojekt</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <meta name="description" content="Her findes svaret på hvorfor man skal drikke alkoholfrit.">
+
+</head>
+<body>
+
+<!--Header med menupunkter, logo og burgermenu-->   
+<header>
+    <nav>
+    <a href="index.html"><img src="img/logo.png" alt="" class="logo-billede"></a>
+        <div>
+            <!--kurv-->
+
+            <div id="cart-container" class="cart-container">
+                <div class="cart-icon" onclick="goToCartPage()">
+                    <img src="img/øl-holder.png" alt="kurve ikon">
+                    <div class="cart-count">
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!--kurv slut-->
+            <div class="burger-menu-btn" onclick="toggleBurgerMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            </div>
+    </div>
+      
+      <div class="burger-menu">
+        <!-- Your burger menu content goes here -->
+        <ul>
+            <li><a href="smage.html">Udvalg</a></li>
+            <li><a href="alkoholfri.html">Alkoholfri?</a></li>
+            <li><a href="anbefalinger.html">Anbefalinger</a></li>
+        </ul>
+        <div class="header-kontakt">
+            <a href="om-os.html"><p>Om os</p></a>
+            <a href="404.html"><img src="img/instagram.svg" alt="Instagram logo"></a>
+            <a href="404.html"><img src="img/facebook.svg" alt="Facebook logo"></a>
+            <a href="404.html"><img src="img/tik-tok.svg" alt="Tik tok logo"></a>
+            <a href="404.html"><p>Kontakt</p></a>
+        </div>
+      </div>
+
+
+    </nav>
+</header>
+
+<!--Her skal resten af hjemmesiden ind-->
+    <main>
+
+        <div class="overskrift-kort">
+        <h1 class="underside-overskrift">Alkoholfri?</h1>
+        </div>
+
+        <div class="stor-kort-anbefaling">
+        <video muted autoplay loop playsinline src="img/o-video.mp4" width="1920"></video>
+        <p class="beskrivende-tekst-alkoholfri">Ved at omfavne alkoholfrie alternativer tager du kontrol over dine valg og fremmer ansvarlig druk. Det betyder at du kan nyde de forfriskende og velsmagende øjeblikke uden at påvirke din evne til at træffe klare beslutninger eller bevare din fysiske og mentale sundhed.</p>
+        </div>
+
+        <div class="alkoholfri-kort">
+            <h1>Sundhed</h1>
+            <picture class="underside-billeder">
+                <source media="(min-width: 800px)" srcset="img/sundhed.webp" class="underside-billeder">
+                <img src="img/mobil-billeder/sundhed.jpg" class="underside-billeder" alt="Billede af hvad sundhed indebærer">
+              </picture>
+            <p class="beskrivende-tekst-alkoholfri">Vores alkoholfrie øl giver dig friheden til at nyde en forfriskende drink uden at bekymre dig om alkoholindtaget. Det er det perfekte valg for dem, der ønsker at opretholde en sund og afbalanceret livsstil.</p>
+        </div>
+
+
+        <div class="stor-kort">
+        <div class="alkoholfri-kort">
+            <h1>Ansvar</h1>
+            <picture class="underside-billeder">
+                <source media="(min-width: 800px)" srcset="img/ansvar.jpg" class="underside-billeder">
+                <img src="img/mobil-billeder/ansvar.jpg" class="underside-billeder" alt="Billede af de folk der skåler og en mand der ligger med tømmermænd">
+              </picture>
+            <p class="beskrivende-tekst-alkoholfri">Alkoholfrit gør det muligt at deltage fuldt ud i sociale situationer, køre sikkert og bevare din evne til at være opmærksom på dine omgivelser. Det er et valg, der respekterer både dig selv og andre omkring dig. Ved at vælge alkoholfrit bidrager du til at skabe en kultur af ansvarlig druk og viser, at gode øjeblikke kan deles uden alkoholens påvirkning.</p>
+        </div>
+    </div>
+
+    <div class="stor-kort">  
+    <div class="alkoholfri-kort">
+            <h1>Tabu?</h1>
+            <picture class="underside-billeder">
+                <source media="(min-width: 800px)" srcset="img/tabu.jpg" class="underside-billeder">
+                <img src="img/mobil-billeder/tabu.jpg" class="underside-billeder" alt="Billede af en appelsin som står alene og ædru til en fest hvor alle er fulde">
+              </picture>
+            <p class="beskrivende-tekst-alkoholfri">Alkoholfri øl fortjener at blive anerkendt og værdsat for sine egne kvaliteter, og ved at støtte det alkoholfire alternativ bryder du med, hvad der har været en barriere for nogle. Vælg frihed over forudindtagethed og anerkend, at hver dråbe tæller, uanset om den indeholder alkohol eller ej. Vær med til at gøre en forskel og skål for valgfrihed, smag og den gode følelse af at træffe bevidste valg for dit velvære!</p>
+        </div>
+    </div>  
+
+    </main>
+
+<!--En footer med adresse, telefon og email. Det er også her man finder links til virksomhedens some-->
+<footer>
+    <div>
+        <p>Følg os</p>
+        <div>
+            <a href="../404.html" class="knap-stil"><img src="../img/instagram.svg" alt="Instagram logo"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/facebook.svg" alt="Facebook logo"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/tik-tok.svg" alt="tik-tok logo"></a>
+        </div>
+    </div>
+
+    <div class="footer-kontakt">
+    <a href="../om-os.html"><p>Om os</p></a>
+    </div>
+
+    <div class="footer-kontakt">
+    <a href="../404.html"><p>Kontakt</p></a>
+    </div>
+
+
+    <div>
+        <p>Kontakt</p>
+        <div>
+            <a href="../404.html" class="knap-stil"><img src="../img/location.png" alt=" lokation"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/telephone.png" alt="telefon"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/mail.png" alt="e.mail"></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/burger.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

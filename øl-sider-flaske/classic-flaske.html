@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Fredoka:wght@300;500&display=swap" rel="stylesheet">
+    <title>Classic | Eksamensprojekt</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <meta name="description" content="Vores øl med smagen classic">
+
+</head>
+<body>
+
+<!--Header med menupunkter, logo og burgermenu-->   
+<header>
+    <nav>
+    <a href="../index.html"><img src="../img/logo.png" alt="Logo" class="logo-billede"></a>
+        <div>
+            <!--kurv-->
+
+            <div id="cart-container" class="cart-container">
+                <div class="cart-icon" onclick="goToCartPage()">
+                    <img src="../img/øl-holder.png" alt="kurve ikon">
+                    <div class="cart-count">
+                        <span id="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!--kurv slut-->
+            <div class="burger-menu-btn" onclick="toggleBurgerMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            </div>
+    </div>
+      
+      <div class="burger-menu">
+        <!-- Your burger menu content goes here -->
+        <ul>
+            <li><a href="../smage.html">Udvalg</a></li>
+            <li><a href="../alkoholfri.html">Alkoholfri?</a></li>
+            <li><a href="../anbefalinger.html">Anbefalinger</a></li>
+        </ul>
+        <div class="header-kontakt">
+            <a href="../om-os.html"><p>Om os</p></a>
+            <a href="../404.html"><img src="../img/instagram.svg" alt="instagram logo"></a>
+            <a href="../404.html"><img src="../img/facebook.svg" alt="facebook logo"></a>
+            <a href="../404.html"><img src="../img/tik-tok.svg" alt="tik-tok logo"></a>
+            <a href="../404.html"><p>Kontakt</p></a>
+        </div>
+      </div>
+
+
+    </nav>
+</header>
+
+<!--Her skal resten af hjemmesiden ind-->
+    <main class="individuel-øl-main">
+        <!--absolutte knapper-->
+        <div class="absolutte-knapper-top">
+            <a href="../udvalg-andre-smage.html" class="knap-stil"><img src="../img/tongue-orange.png" alt="De 5 grundsmage ikon"></a>
+            <a href="../øl-sider-dåse/classic-dåse.html" class="knap-stil"><img src="../img/dåse-farve.svg" alt="Dåse ikon i farver"></a>
+        </div>
+
+        <div class="induviduel-øl-billede-container">
+        <img src="../img/flaske-classic.png" alt="Øl flaske classic" class="individuel">
+        </div>
+
+        <div class="individuel-container">
+        <h2 class="underside-underoverskrift-udvalg">Classic</h2>
+        <p class="beskrivende-tekst">En maltrig symfoni, der møder dine smagsløg, akkompagneret af en subtil blanding af humle.</p>
+        <p class="beskrivende-tekst-venstre">10,-</p>
+
+        <div class="inden_kurv">
+            <div class="antal">
+                <!--Hvis vi gerne vil have en overskrift på, skal vi bare bruge det nedenunder og sætte alt andet i sin egen div-->
+                <!--<label for="quantity">Vælg antal:</label>-->
+
+                <button class="quantity-btn decrement" onclick="decrement('quantity')">-</button>
+                <input type="text" id="quantity" name="quantity" value="1" readonly>
+                <button class="quantity-btn increment" onclick="increment('quantity')">+</button>
+            </div>
+
+            <div class="kurv">
+                <div class="product" data-product-id="1">
+                    <button onclick="addToCart(1)">Læg i kurv</button>
+                </div>
+            </div>
+        </div>
+
+            <div class="oplysninger-container">
+                <img src="../img/procent.svg" alt="procent">
+                <div>
+                    <p>Alkoholprocent:</p>
+                    <p>0.5%</p>
+                </div>
+            </div>
+
+            <div class="oplysninger-container">
+                <img src="../img/temperatur.svg" alt="temperatur">
+                <div>
+                    <p>Serveringstemperatur:</p>
+                    <p>5-10° C</p>
+                </div>
+            </div>
+
+            <div class="oplysninger-container">
+                <img src="../img/æble.svg" alt="Næringsindhold">
+                <div>
+                    <p>Næringsindhold:</p>
+                    <a class="button" href="#popup1">klik for at se</a>
+
+                    <!--pop up-->
+                    <div id="popup1" class="overlay">
+                        <div class="popup">
+                            <h2>Næringsindhold</h2>
+                            <a class="close" href="#">&times;</a>
+                            <div class="content">
+                                Kalorier: <br>
+                                89 kj / 21 kcal <br> <br>
+                                Kulhydrat: <br>
+                                4,8 gram <br><br>
+                                Heraf sukkerarter: <br>
+                                1,3 gram <br><br>
+                                Protein: <br>
+                                0 gram <br><br>
+                                Salt: <br>
+                                0 gram <br><br>
+                                Ingredienser: <br>
+                                Vand, bygmalt, humleekstrakt, naturlig aroma
+                            </div>
+                        </div>
+                    </div>
+                    <!--pop up slut-->
+
+                </div>
+            </div>
+
+            <div class="oplysninger-container">
+                <img src="../img/kniv-og-gaffel.svg" alt="Går godt med">
+                <div>
+                    <p>Går godt med:</p>
+                    <p>Grillmad, østers og desserter</p>
+                </div>
+            </div>
+
+            <div class="oplysninger-container">
+                <img src="../img/kalender.svg" alt=" Går godt til">
+                <div>
+                    <p>Går godt til:</p>
+                    <p>Sport eller en aften med venner</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--absolutte knapper-->
+        <div class="absolutte-knapper-venstre">
+            <a href="../øl-sider-flaske/pilsner-flaske.html" class="knap-stil"><img src="../img/arrow-left.png" alt=""></a>
+        </div>
+
+        <div class="absolutte-knapper-højre">
+            <a href="../øl-sider-flaske/ipa-flaske.html" class="knap-stil"><img src="../img/arrow-right.png" alt=""></a>
+        </div>
+        
+    </main>
+
+<!--En footer med adresse, telefon og email. Det er også her man finder links til virksomhedens some-->
+<footer>
+    <div>
+        <p>Følg os</p>
+        <div>
+            <a href="../404.html" class="knap-stil"><img src="../img/instagram.svg" alt="Instagram logo"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/facebook.svg" alt="Facebook logo"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/tik-tok.svg" alt="tik-tok logo"></a>
+        </div>
+    </div>
+
+    <div class="footer-kontakt">
+    <a href="../om-os.html"><p>Om os</p></a>
+    </div>
+
+    <div class="footer-kontakt">
+    <a href="../404.html"><p>Kontakt</p></a>
+    </div>
+
+
+    <div>
+        <p>Kontakt</p>
+        <div>
+            <a href="../404.html" class="knap-stil"><img src="../img/location.png" alt=" lokation"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/telephone.png" alt="telefon"></a>
+            <a href="../404.html" class="knap-stil"><img src="../img/mail.png" alt="e.mail"></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="../js/burger.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/knapper.js"></script>
+</body>
+</html>
